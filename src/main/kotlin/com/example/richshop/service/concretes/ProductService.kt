@@ -86,7 +86,7 @@ class ProductService(
     }
 
     override fun getProductsByCategory(category: String): List<Product> {
-        return productRepository.findByCategoryName(category)
+        return productRepository.findByCategories_Name(category)
     }
 
     override fun getProductsByBrand(brand: String): List<Product> {
@@ -94,7 +94,7 @@ class ProductService(
     }
 
     override fun getProductsByCategoryAndBrand(category: String, brand: String): List<Product> {
-        return productRepository.findByCategoryNameAndBrand(category, brand)
+        return productRepository.findByCategories_NameAndBrand(category, brand)
     }
 
     override fun getProductsByName(name: String): List<Product> {

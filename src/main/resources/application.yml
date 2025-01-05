@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: richShop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/richShopDb
+    username: postgres
+    password: sql-diyari-22
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
